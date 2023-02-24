@@ -10,20 +10,25 @@
 
     .title{
         text-align: center;
-        margin: 2rem 0 1rem;
-        font-size: 50px;
+        margin: 2rem 0;
+        height: 70px;
+        background-color: #adad85;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -1rem;
 
     .col{
         flex-basis: 20%;
         min-height: 300px;
         padding: 1rem;
-        
     }
 }
 
@@ -36,6 +41,7 @@
     justify-content: space-between;
     border: 1px solid #555;
     padding: 1rem;
+    background-color: #999900;
 
     .movie-title{
         font-size: 25px;
