@@ -7,4 +7,44 @@
 .container{
     width: 1400px;
     margin: 0 auto;
+
+    .title{
+        text-align: center;
+        margin: 2rem 0 1rem;
+        font-size: 50px;
+    }
 }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+    .col{
+        flex-basis: 20%;
+        min-height: 300px;
+        padding: 1rem;
+        
+    }
+}
+
+.card{
+    text-align: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #555;
+    padding: 1rem;
+
+    .movie-title{
+        font-size: 25px;
+    }
+
+    p{
+        padding: 10px 0;
+        font-size: 20px;
+    }
+}
+
+

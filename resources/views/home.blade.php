@@ -10,11 +10,22 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    <div class="comtainer">
-        <h1>Home</h1>
-          @foreach ($movies as $movie )
-            <h1>{{$movie->title}}</h1>         
-          @endforeach
+    <div class="container">
+        <h1 class="title">{{env('APP_NAME')}} List</h1>
+        <div class="row">
+            @foreach ($movies as $movie )
+            <div class="col">
+                <div class="card">
+                   <h2 class="movie-title">{{$movie->title}}</h2>
+                   <p>{{$movie->original_title}}</p>
+                   <p><strong>Production: </strong>{{$movie->nationality}}</p>          
+                   <p><i><strong>Release date: </strong>{{$movie->date}}</i></p>          
+                   <p><strong>Vote: </strong>{{$movie->vote}}</p>          
+                </div>
+            </div>
+            @endforeach
+        </div>
+         
     </div>
     
 </body>
