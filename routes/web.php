@@ -15,8 +15,3 @@ use App\Http\Controllers\MovieController;
 */
 
 Route::get('/', [MovieController::class, 'getMovie'])->name('home');
-
-// Route::get('/', function () {
-
-//     return view('home');
-// })->name('home');
